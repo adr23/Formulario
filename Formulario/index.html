@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml"></html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+       <title>Formulario</title>
+
+
+</head>
+<style>
+    *{margin:0; padding: 0;box-sizing: border-box;}
+    body{
+       background-color: #8ecaff;
+    }
+    form{
+        background-color: #f0f8ff;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    form h3{
+        text-align: center;
+        color: #00223f;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    form input[type=text]
+    {
+        width:100%;
+        heigth:45px;
+        border:1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+    form input[type=number]
+    {
+        width:100%;
+        heigth:45px;
+        border:1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    form input[type=submit]{
+        width: 100%;
+        height: 30px;
+        cursor: pointer;
+        background-color: #00223f;
+        color: white;
+        border: 0;
+        border-radius: 40px;
+        transition: 1s;
+    }
+    
+    form input[type=submit]:hover{
+        background-color: #00417a
+        ;
+    }
+        
+    </style>
+
+<body>
+  <form>
+      <h3>Entre em Contato</h3>
+      <input type="text" name="Nome" placeholder="Nome"/>
+      <input type="text" Sobrenome="Sobrenome" placeholder="Sobrenome"/>
+      <input type="number" Telefone="telefone" placeholder="Telefone"/>
+      <input type="text" email="email" placeholder="E-mail"/>
+      <input type="text" Mensagem="Mensagem" placeholder="Escreva sua Mensagem"/>
+      <input type="submit" Enviar="acao" value="Enviar"/>
+  </form>
+ 
+ <script type="text/javascript">
+ function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+
+if (nome.value != "") {
+    alert('Obrigado ' + nome.value +'! Os seus dados foram encaminhados com sucesso');
+    }
+}
+
+function tel()
+var tel = document.getElementById("Numberid");
+    alert ('Escreva seu telefone')
+
+</script>
+</body>
+</html>
